@@ -1,0 +1,159 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
+
+.nav-font{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body{
+    padding: 0 15px;
+}
+
+.content{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav-item{
+    border: 1px solid black;
+    display: flex;
+    align-content: center;
+    padding: 5px 20px 5px 20px;
+    border-collapse: collapse;
+}
+
+.nav-item:hover{
+    background-color: gray;
+}
+
+.content-left{
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-right{
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black;
+    background: darkslategray;
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: white;
+    color: black;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: gray;
+}
+
+.content-image {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image img {
+    width: 35%;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+.content-image span {
+    color: gray;
+    align: center;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 8px 2px;
+}
+
+select{
+    padding: 8px 2px;
+}
+
+center{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    background: lightgray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.pembatas{
+    height: 250px; 
+    background-color: gray;
+}
+
+.pembatas-font{
+    font-weight: bold; 
+    display: flex; 
+    margin: 0; 
+    position: relative; 
+    top: 38%; 
+    left: 46%;
+}
+
+
+.closing{
+    height: 250px; 
+    border-top: 1px solid;
+}
+
+.closing-font{    
+    font-weight: bold; 
+    display: flex; 
+    flex-direction: column;
+    margin: 0; 
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+footer{
+    border-top: 1px solid;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
