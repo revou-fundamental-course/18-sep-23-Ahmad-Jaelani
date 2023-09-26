@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Revou</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 
 
@@ -38,25 +37,35 @@
             </div>
         </div>
             </div>
+
+            <!-- form kanan -->
             <div title="form" class="content-right">
-                <form class="content-form">
+                <form name="form" class="content-form" onsubmit="return validateForm()">
+                    
+                    <!-- Text -->
                 <div style="margin-bottom: 30px;">
                     <h3>Contact US</h3>
                     <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
                 </div>
-                    <label for="your-name">Your Name:</label>
-                    <input type="text" name="your-name" placeholder="First and last Name">
 
-                    <label for="email">Email Address:</label>
-                    <input type="text" name="email" placeholder="example@gmail.com">
+                    <!-- Your Name: -->
+                    Your Name:
+                    <input type="text" name="yourname" placeholder="First and last Name" required>
 
-                    <label for="Interest">What are you interested?</label>
-                    <select type="select" name="Interest" id="">
+                    <!-- Email Address: -->
+                    Email Address:
+                    <input type="text" name="email" placeholder="example@gmail.com" required>
+
+                    <!-- Interest: -->
+                    What are you interested in?
+                    <select type="select" name="Interest" id="" required>
+                        <option value=""></option>
                         <option value="Football">Football</option>
                         <option value="Tenis">Tenis</option>
                     </select>
 
                     <button id="button" type="submit" class="button">SEND</button>
+                    <p id="error"></p>
                 </form>
             </div>
         </div>
@@ -146,6 +155,7 @@
             </div>
         </div>
 </body>
+    <script src="js/script.js"></script>
 
 <footer>
     <p class="footer">Ahmad Jaelani © September 2023 RevoU</p>
