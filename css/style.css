@@ -43,7 +43,7 @@ body{
     flex-direction: column;
     display: flex;
     box-sizing: border-box;
-    width: 50%;
+    width: 60%;
 }
 
 .title-content{
@@ -62,17 +62,22 @@ body{
 }
 
 .img-slideshow{
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 400px;
     background-size: cover;
     background-position: center;
+}
+
+.content-image span {
+    color: gray;
+    align: center;
 }
 
 /* Bagian Kanan */
 
 .content-right{
     box-sizing: border-box;
-    width: 50%;
+    width: 40%;
 }
 
 .button{
@@ -88,7 +93,7 @@ body{
 }
 
 .button:hover{
-    background: white;
+    background: orange;
     color: black;
 }
 
@@ -101,11 +106,6 @@ body{
 
 label{
     margin-bottom: 5px;
-}
-
-.content-image span {
-    color: gray;
-    align: center;
 }
 
 input{
@@ -122,9 +122,18 @@ center{
     margin-bottom: 30px;
 }
 
+/* Tengah bawah  */
+
 .content-bawah{
     display: flex;
+    width: 40%;
     flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.tulisan-bawah{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -139,6 +148,8 @@ center{
     margin-right: 15px;
 }
 
+/* Pembatas tengah */
+
 .pembatas{
     display: flex;
     height: 250px; 
@@ -152,16 +163,22 @@ center{
     width: 250px;
 }
 
+/* Penawaran  */
+
 .penawaran{
     display:flex; 
     flex-direction: row; 
     margin: 10px;
+    align-items: center;
+    width: 600px;
 }
 
+/* Closing  */
 
 .closing{
     height: 250px; 
     border-top: 1px solid;
+    margin-bottom: 50px;
 }
 
 .closing-font{    
@@ -190,9 +207,11 @@ center{
 }
 
 .button-call:hover{
-    background: white;
+    background: orange;
     color: black;
 }
+
+/* footer  */
 
 footer{
     margin-top: 20px;
@@ -202,6 +221,8 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+/* Media Screen 600px */
 
 @media only screen and (max-width: 600px) {
     .header {
@@ -231,12 +252,19 @@ footer{
     .content-bawah{
         align-items: center;
         margin-bottom: 15px;
+        width: 100%;
     }
     .pembatas{
-        width: max-content;
+        width: 100%;
         margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
     }
     .penawaran{
         flex-direction: column;
     }
+    .tulisan-bawah{
+        width: 500px;
+    }
+
 }

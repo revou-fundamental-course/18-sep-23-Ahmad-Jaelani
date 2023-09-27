@@ -1,3 +1,5 @@
+// Form Validation 
+
 function validateForm() {
     const name = document.forms["form"]["yourname"].value;
     const email = document.forms["form"]["email"].value; 
@@ -8,6 +10,8 @@ function validateForm() {
         return false;
 }
 }
+
+// Slide Show 
 
 var slideIndex = 1;
 showDivs(slideIndex);
