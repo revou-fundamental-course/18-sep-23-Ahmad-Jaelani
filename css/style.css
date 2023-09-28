@@ -159,7 +159,7 @@ center{
 .pembatas-font{
     display: flex;
     margin: auto;
-    text-align: center;
+    justify-content: center;
     width: 250px;
 }
 
@@ -268,6 +268,11 @@ footer{
     }
     .separator{
         margin-bottom: 15px;
+    }
+    .content-right{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
 }
