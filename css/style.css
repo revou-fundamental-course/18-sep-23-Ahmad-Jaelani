@@ -266,5 +266,8 @@ footer{
     .tulisan-bawah{
         width: 500px;
     }
+    .separator{
+        margin-bottom: 15px;
+    }
 
 }
